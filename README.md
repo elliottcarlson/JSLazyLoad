@@ -41,3 +41,10 @@ JSLazyLoad has been tested and is working on:
 * Internet Explorer 8
 * FireFox 3.6
 * Chrome 6.0
+
+Author
+------
+
+Elliott Carlson
+trendinteractive (at) gmail (dot) com
+https://github.com/elliottcarlson/

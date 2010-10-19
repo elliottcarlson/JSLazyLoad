@@ -15,7 +15,7 @@
  * passed argument is the callback function.
  *
  * Author: Elliott Carlson
- * GitHub: http://github.com/elliottcarlson
+ * GitHub: http://elliottcarlson.github.com/JSLazyLoad
  **/
 var JSLazyLoad = (function()
 {
