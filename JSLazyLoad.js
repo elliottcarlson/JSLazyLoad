@@ -76,3 +76,5 @@ var JSLazyLoad = (function()
 		document.getElementsByTagName('head')[0].appendChild(js);
 	}
 });
+
+JS
