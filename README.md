@@ -13,6 +13,24 @@ your HTML head.
 JSLazyLoad allows you to load in one or multiple JavaScript files at a time,
 and provides a callback mechanism once the requested files have finished loading.
 
+Examples
+--------
+
+Load a single JavaScript file, and run the callback when done:
+
+    JSLazyLoad('/js/script.js', function()
+    {
+        // Add functionality here.
+    });
+
+Load multiple JavaScript files, and run the callback when all files are finished loading:
+
+    JSLazyLoad('/js/script1.js', '/js/script2.js', '/js/script3.js', function()
+    {
+        // Add functionality here.
+    });
+
+
 Compatibility
 -------------
 
