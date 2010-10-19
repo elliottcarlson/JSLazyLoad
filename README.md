@@ -46,5 +46,7 @@ Author
 ------
 
 Elliott Carlson
+
 trendinteractive (at) gmail (dot) com
+
 https://github.com/elliottcarlson/
