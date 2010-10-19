@@ -1,5 +1,5 @@
 /**
- * LazyLoad JS Script loader with callback.
+ * JSLazyLoad Script loader with callback.
  *
  * Dynamically load in scripts as they are needed to reduce blocking and amount
  * of base javascript code needed on each pages.
@@ -17,12 +17,8 @@
  * Author: Elliott Carlson
  * GitHub: http://github.com/elliottcarlson
  **/
-var LazyLoad = (function()
+var JSLazyLoad = (function()
 {
-	// Store the loaded scripts in an array to prevent multiple loads
-	var scripts = new Array();
-	var current_script = null;
-
 	// If there are more than 2 arguments passed;
 	if (arguments.length > 2)
 	{
@@ -32,7 +28,7 @@ var LazyLoad = (function()
 		// Intermediate callback to maintain if all the passed files have
 		// been loaded yet - will only execute the final callback once all
 		// files have loaded.
-		var checkCompletion = function()
+		var check_completion = function()
 		{
 			if (++load_index == load_complete)
 			{
@@ -43,7 +39,7 @@ var LazyLoad = (function()
 		// on it's own, using the intermediate callback.
 		for (var index = 0; index < arguments.length - 1; index++)
 		{
-			LazyLoad(arguments[index], checkCompletion);
+			JSLazyLoad(arguments[index], check_completion);
 		}
 	}
 	else
